@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../webfonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url('../webfonts/Quicksand.ttf');
+}
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.teks-kuning{
+    color: rgb(228, 205, 0) !important;
+}
+.teks-hijau{
+    color: rgb(7, 211, 0) !important;
+}
+.teks-merah{
+    color: rgb(207, 0, 0) !important;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+.jumbotron .brand-logo{
+    width: 350px;
+}
+.jumbotron h1{
+    margin: 0;
+    font-size: 24pt;
+}
+
+nav{
+    box-shadow: none;
+    z-index: 999;
+}
+
+nav .brand-logo{
+    display: none;
+}
+
+nav i{
+    font-size: 15px;
+}
+
+nav #nav-mobile a{
+    font-size: 12pt;
+}
+
+.progress{
+    display: none;
+}
+.indeterminate{
+    background-color: #00C853 !important;
+}
+
+.tabs .tab a{
+    color: #009137 !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    color: #009137 !important;
+    background-color: #0091380e !important;
+}
+
+.tabs .indicator{
+    background-color: #00913833 !important;
+}
+
+#body-content{
+    min-height: 100vh;
+}
+#body-content p{
+    font-size: 12pt;
+    color: black;
+}
+
+#body-content .block-pages{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: lawngreen;
+    display: none;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card h2{
+    margin: 25px 0;
+    font-size: 3em;
+}
+.card h3{
+    font-size: 2em;
+}
+
+.text-tab{
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.card-league .league-crest{
+    width: 250px;
+}
+.card-league .crest-img{
+    margin: auto;
+    height: 250px;
+}
+.card-league .league-info h3{
+    margin-top: 0;
+}
+.card-league .league-info p{
+    font-size: 13pt !important;
+}
+.card-league .card-action a{
+    color: #009137 !important;
+}
+.card-league .card-content{
+    padding: 0;
+}
+
+#team{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+#team .crest-img{
+    display: flex;
+    margin: auto;
+    height: 250px;
+}
+#team .btn-floating{
+    margin-top: -50px;
+    width: 55px;
+    height: 55px;
+}
+#team i{
+    font-size: 2rem;
+    line-height: 55px;
+}
+
+#teaminfo{
+    padding: 0;
+}
+
+#teammember p{
+    margin: 4px 0;
+}
+
+#profil-img{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px){
+    .jumbotron{
+        display: none;
+    }
+
+    nav .brand-logo{
+        display: block;
+        width: 125px;
+        margin: 12px 0;
+    }
+
+    nav i{
+        margin-right: 12px !important;
+        text-align: center;
+    }
+
+    .card h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 2.5em;
+    }
+    .card h3{
+        font-size: 1.8em;
+        margin: 20px 0 30px 0 !important;
+    }
+
+    #home h2{
+        margin-bottom: 25px;
+    }
+
+    #saved-team .card-content h2, #saved-team .card-content p{
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .card-league{
+        flex-direction: column;
+    }
+    .card-league .league-crest{
+        margin: auto;
+    }
+    .card-league .league-info h3{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .card-league .league-info .row{
+        text-align: center;
+    }
+    .card-league .card-action{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .card-league .card-action a{
+        margin: 0 !important;
+    }
+
+    #team .crest-img{
+        height: 200px;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 13pt;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px){
+    nav .brand-logo{
+        margin: 8px 0;
+    }
+
+    #home p{
+        font-size: 14px !important;
+    }
+
+    #team .btn-floating{
+        width: 50px;
+        height: 50px;
+    }
+    #team i{
+        font-size: 1.8rem;
+        line-height: 50px;
+    }
+    #team .crest-img{
+        height: 150px;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 10pt;
+    }
+    
+}
+
+/* Desktop Only */
+@media screen and (min-width: 992px){
+    nav.green.accent-4{
+        background-color: #00a846 !important;
+    }
+
+    nav .fa-caret-down{
+        padding-left: 10px;
+    }
+    .text-tab{
+        text-indent: 50px;
+    }
+
+    #body-content{
+        min-height: 40vh;
+    }
+
+    #team h2{
+        margin-bottom: 0;
+    }
+
+    #saved-team .card-content{
+        padding-left: 24px;
+    }
+}
